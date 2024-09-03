@@ -1,0 +1,246 @@
+
+    header{
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    ul{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;  
+        order: 3;
+    }
+    ul a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        transition: all 1s ease;
+    }
+    ul a:hover {
+        background-color: black;
+        color: white;
+        border-radius: 12%;
+    }
+    #check {
+        display: none;
+        cursor: pointer;
+    }
+    .checkbtn {
+        display: none;
+        cursor: pointer;
+    }
+    #about{
+        padding: 10px;
+        margin-top: 5px;
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+        background-color: #CCD5AE;
+    }
+    #about > div >img{
+        width: 300px;
+        box-shadow: 3px 2px 3px gray;
+        transition: all 2s ease;
+    }
+    #about > div >img:hover {
+        transform: translateX(30px);
+    }
+    .about-right p{
+        font-size: 25px;
+        font-family: cursive;
+    }
+    #skills{
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        background-color: #987D9A;
+        justify-content: space-around;
+    }
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,td{
+        padding: 20px 50px;
+    }
+    th{
+        background-color: #77E4C8;
+    }
+    td{
+        background-color: #A0937D;
+    }
+    .frontend , .backend, .database{
+        transition: all 2s ease;
+    }
+    #skills:hover .frontend , #skills:hover .backend, #skills:hover .database{
+        transform: rotateY(360deg);
+    }
+    #projects {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    #projects > div{
+        padding: 10px;
+        margin-top: 5px;
+        background-color: lightsalmon;
+        width: 400px;
+        height: 340px;
+        transition: all 1s ease;
+    }
+    #projects > div:hover{
+        transform: scale(1.02);
+    }
+    #projects div > img{
+        width:100% ;
+        height: 75%;
+        box-shadow: 4px 4px 3px  gray; 
+    
+    }
+    #projects div > h2{
+        margin-top: -2px;
+    }
+    .P_links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3px;
+    }
+    #contact{
+        margin-top: 5px;
+        text-align: center;
+        background-color: lightgray;
+        padding: 10px;
+    }
+    #contact input{
+        width: 50%;
+        padding: 10px 0px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 14px;
+        outline: none;
+        border: none;
+        background-color: whitesmoke;
+    }
+    #contact input:focus {
+        background-color:  transparent; 
+        color: #697565;
+    }
+    #contact P{
+        background-color: rgb(66, 66, 220);
+        padding: 10px;
+        width: 50%;
+       margin: 1% auto;
+       transition: all2s ease;
+    }
+    #contact p:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.02);
+    }
+    footer{
+        margin-top: 10px;
+        /* display: flex; */
+        padding: 5% ;
+        font-size: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .social-Links,footer .up-links{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+@media screen and (max-width:768px) {
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+        .checkbtn {
+          display: block;
+          order: 1;
+          margin-right: 20px;
+          font-size: 30px;
+        }
+        ul {
+          padding: 10px;
+          position: fixed;
+          top: 65px;
+          right: -100%;
+          background-color: lightblue;
+          width: 25%;
+          height: 30vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease;
+          z-index: 10;
+        }
+        ul li {
+          margin: 1px 0;
+        }
+        ul li a {
+          font-size: 20px;
+        }
+        #check:checked ~ ul {
+           right: 0%;
+        }
+        #about{
+            padding: 10px;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: #CCD5AE;
+        }
+        #about > div >img{
+            width: 300px;
+            box-shadow: 3px 2px 3px gray;
+            transition: all 2s ease;
+        }
+        #about > div >img:hover {
+            transform: scale(1.02);
+        }
+        #skills{
+            margin-top: 5px;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            background-color: #987D9A;
+            justify-content: center;
+            place-items: center;
+        }
+        .frontend , .backend, .database {
+            transition: all 2s ease;
+        }
+        #skills:hover .frontend , #skills:hover .database{
+            transform: translateX(90px);
+        }
+        #skills:hover .backend {
+            transform: translateX(-90px);
+        } 
+        #projects {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            place-items: center;
+        }
+}
